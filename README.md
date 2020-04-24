@@ -5,7 +5,7 @@
 Explore Bike Share Project
 
 ### Description
-Describe what your project is about and what it does
+This project is all about exploring bike sharing data in three different cities named as Washington, Chicago and New York. The project explored the three main ideas such as the popular times of travel, popular stations and trip and Trip Duration.
 
 ### Files used
 Include the files used
