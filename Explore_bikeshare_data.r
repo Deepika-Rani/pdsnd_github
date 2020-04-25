@@ -76,7 +76,7 @@ Most.Often.Day.df <- as.data.frame(Most.Often.Day)
 names(Most.Often.Day.df) <- c("Week_days", "count")
 Most.Often.Day.df 
 
-
+which.max(Most.Often.Day.df$count)
 
 ## visual representation of data
 
@@ -93,6 +93,11 @@ Most.Often.Day <- table(wday(datetime, abbr = FALSE))
 Most.Often.Day.df <- as.data.frame(Most.Often.Day)
 names(Most.Often.Day.df) <- c("Week_days", "count")
 Most.Often.Day.df 
+
+
+which.max(Most.Often.Day.df$count)
+
+
 ## visual representation of data
 
 ggplot(Most.Often.Day.df, aes(x= Week_days, y = count, group = 1)) +
@@ -107,6 +112,9 @@ Most.Often.Day <- table(wday(datetime, abbr = FALSE))
 Most.Often.Day.df <- as.data.frame(Most.Often.Day)
 names(Most.Often.Day.df) <- c("Week_days", "count")
 Most.Often.Day.df 
+
+
+which.max(Most.Often.Day.df$count)
 
 ## visual representation of data
 
