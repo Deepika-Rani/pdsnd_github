@@ -133,6 +133,8 @@ names(Most.Often.hour.df) <- c("Hours_of_day", "count")
 Most.Often.hour.df
 
 
+which.max(Most.Often.hour.df$count)
+
 ##visualization
 ggplot(Most.Often.hour.df, aes(x= Hours_of_day, y = count, group = 1)) +
   geom_line(state = "identity")
@@ -146,6 +148,8 @@ Most.Often.hour <- table(hour(datetime))
 Most.Often.hour.df <- as.data.frame(Most.Often.hour)
 names(Most.Often.hour.df) <- c("Hours_of_day", "count")
 Most.Often.hour.df
+
+which.max(Most.Often.hour.df$count)
 
 
 ##visualization
@@ -161,6 +165,10 @@ Most.Often.hour <- table(hour(datetime))
 Most.Often.hour.df <- as.data.frame(Most.Often.hour)
 names(Most.Often.hour.df) <- c("Hours_of_day", "count")
 Most.Often.hour.df
+
+
+which.max(Most.Often.hour.df$count)
+
 ##visualization
 ggplot(Most.Often.hour.df, aes(x= Hours_of_day, y = count, group = 1)) +
   geom_line(state = "identity") +
