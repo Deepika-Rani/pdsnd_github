@@ -4,7 +4,7 @@
 ## New York
 ## Washington
 ## chicago
-newyork = read.csv('new_york_city.csv')
+newyork = read.csv('new-york-city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
 
@@ -20,6 +20,9 @@ Most.Often.Month <- table(month(d.month))
 Most.Often.Month.df <- as.data.frame(Most.Often.Month)
 names(Most.Often.Month.df) <- c("month", "count")
 Most.Often.Month.df
+
+which.max(Most.Often.Month.df$count)
+
 
 ## visual representation 
 
@@ -37,6 +40,8 @@ Most.Often.Month.df <- as.data.frame(Most.Often.Month)
 names(Most.Often.Month.df) <- c("month", "count")
 Most.Often.Month.df
 
+which.max(Most.Often.Month.df$count)
+
 ## visual representation 
 
 ggplot(Most.Often.Month.df, aes(x= month, y = count, group = 1)) +
@@ -50,6 +55,8 @@ Most.Often.Month <- table(month(datetime))
 Most.Often.Month.df <- as.data.frame(Most.Often.Month)
 names(Most.Often.Month.df) <- c("month", "count")
 Most.Often.Month.df
+
+which.max(Most.Often.Month.df$count)
 
 ## visual representation 
 
